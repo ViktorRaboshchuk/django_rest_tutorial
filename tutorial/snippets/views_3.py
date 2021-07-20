@@ -35,6 +35,7 @@ class SnippetDetail(APIView):
     """
     Retrive, update or delete a code snippet
     """
+
     def get_object(self, pk):
         try:
             snippet = Snippet.objects.get(pk=pk)
